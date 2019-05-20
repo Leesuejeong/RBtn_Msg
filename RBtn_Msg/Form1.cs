@@ -15,5 +15,15 @@ namespace RBtn_Msg
         {
             InitializeComponent();
         }
+
+        private void RbInformation_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RbError_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
