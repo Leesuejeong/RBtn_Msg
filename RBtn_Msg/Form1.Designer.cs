@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnShow = new System.Windows.Forms.Button();
-            this.rbOk = new System.Windows.Forms.RadioButton();
-            this.rbOkCancel = new System.Windows.Forms.RadioButton();
             this.rbYesNo = new System.Windows.Forms.RadioButton();
-            this.rbError = new System.Windows.Forms.RadioButton();
-            this.rbInformation = new System.Windows.Forms.RadioButton();
+            this.rbOkCancel = new System.Windows.Forms.RadioButton();
+            this.rbOk = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbQuestion = new System.Windows.Forms.RadioButton();
+            this.rbInformation = new System.Windows.Forms.RadioButton();
+            this.rbError = new System.Windows.Forms.RadioButton();
+            this.btnShow = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -53,37 +53,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // groupBox2
+            // rbYesNo
             // 
-            this.groupBox2.Controls.Add(this.rbQuestion);
-            this.groupBox2.Controls.Add(this.rbInformation);
-            this.groupBox2.Controls.Add(this.rbError);
-            this.groupBox2.Location = new System.Drawing.Point(195, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(178, 149);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // btnShow
-            // 
-            this.btnShow.Location = new System.Drawing.Point(12, 167);
-            this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(361, 65);
-            this.btnShow.TabIndex = 0;
-            this.btnShow.Text = "Show";
-            this.btnShow.UseVisualStyleBackColor = true;
-            // 
-            // rbOk
-            // 
-            this.rbOk.AutoSize = true;
-            this.rbOk.Location = new System.Drawing.Point(17, 31);
-            this.rbOk.Name = "rbOk";
-            this.rbOk.Size = new System.Drawing.Size(38, 16);
-            this.rbOk.TabIndex = 0;
-            this.rbOk.TabStop = true;
-            this.rbOk.Text = "Ok";
-            this.rbOk.UseVisualStyleBackColor = true;
+            this.rbYesNo.AutoSize = true;
+            this.rbYesNo.Location = new System.Drawing.Point(17, 101);
+            this.rbYesNo.Name = "rbYesNo";
+            this.rbYesNo.Size = new System.Drawing.Size(61, 16);
+            this.rbYesNo.TabIndex = 2;
+            this.rbYesNo.TabStop = true;
+            this.rbYesNo.Text = "YesNo";
+            this.rbYesNo.UseVisualStyleBackColor = true;
             // 
             // rbOkCancel
             // 
@@ -96,40 +75,28 @@
             this.rbOkCancel.Text = "OkCancel";
             this.rbOkCancel.UseVisualStyleBackColor = true;
             // 
-            // rbYesNo
+            // rbOk
             // 
-            this.rbYesNo.AutoSize = true;
-            this.rbYesNo.Location = new System.Drawing.Point(17, 101);
-            this.rbYesNo.Name = "rbYesNo";
-            this.rbYesNo.Size = new System.Drawing.Size(61, 16);
-            this.rbYesNo.TabIndex = 2;
-            this.rbYesNo.TabStop = true;
-            this.rbYesNo.Text = "YesNo";
-            this.rbYesNo.UseVisualStyleBackColor = true;
+            this.rbOk.AutoSize = true;
+            this.rbOk.Location = new System.Drawing.Point(17, 31);
+            this.rbOk.Name = "rbOk";
+            this.rbOk.Size = new System.Drawing.Size(38, 16);
+            this.rbOk.TabIndex = 0;
+            this.rbOk.TabStop = true;
+            this.rbOk.Text = "Ok";
+            this.rbOk.UseVisualStyleBackColor = true;
             // 
-            // rbError
+            // groupBox2
             // 
-            this.rbError.AutoSize = true;
-            this.rbError.Location = new System.Drawing.Point(19, 31);
-            this.rbError.Name = "rbError";
-            this.rbError.Size = new System.Drawing.Size(50, 16);
-            this.rbError.TabIndex = 1;
-            this.rbError.TabStop = true;
-            this.rbError.Text = "Error";
-            this.rbError.UseVisualStyleBackColor = true;
-            this.rbError.CheckedChanged += new System.EventHandler(this.RbError_CheckedChanged);
-            // 
-            // rbInformation
-            // 
-            this.rbInformation.AutoSize = true;
-            this.rbInformation.Location = new System.Drawing.Point(19, 66);
-            this.rbInformation.Name = "rbInformation";
-            this.rbInformation.Size = new System.Drawing.Size(85, 16);
-            this.rbInformation.TabIndex = 2;
-            this.rbInformation.TabStop = true;
-            this.rbInformation.Text = "Information";
-            this.rbInformation.UseVisualStyleBackColor = true;
-            this.rbInformation.CheckedChanged += new System.EventHandler(this.RbInformation_CheckedChanged);
+            this.groupBox2.Controls.Add(this.rbQuestion);
+            this.groupBox2.Controls.Add(this.rbInformation);
+            this.groupBox2.Controls.Add(this.rbError);
+            this.groupBox2.Location = new System.Drawing.Point(195, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(178, 149);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
             // 
             // rbQuestion
             // 
@@ -141,6 +108,40 @@
             this.rbQuestion.TabStop = true;
             this.rbQuestion.Text = "Question";
             this.rbQuestion.UseVisualStyleBackColor = true;
+            // 
+            // rbInformation
+            // 
+            this.rbInformation.AutoSize = true;
+            this.rbInformation.Location = new System.Drawing.Point(19, 66);
+            this.rbInformation.Name = "rbInformation";
+            this.rbInformation.Size = new System.Drawing.Size(85, 16);
+            this.rbInformation.TabIndex = 2;
+            this.rbInformation.TabStop = true;
+            this.rbInformation.Text = "Information";
+            this.rbInformation.UseVisualStyleBackColor = true;
+            
+            // 
+            // rbError
+            // 
+            this.rbError.AutoSize = true;
+            this.rbError.Location = new System.Drawing.Point(19, 31);
+            this.rbError.Name = "rbError";
+            this.rbError.Size = new System.Drawing.Size(50, 16);
+            this.rbError.TabIndex = 1;
+            this.rbError.TabStop = true;
+            this.rbError.Text = "Error";
+            this.rbError.UseVisualStyleBackColor = true;
+            
+            // 
+            // btnShow
+            // 
+            this.btnShow.Location = new System.Drawing.Point(12, 167);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(361, 65);
+            this.btnShow.TabIndex = 0;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.BtnShow_Click);
             // 
             // Form1
             // 

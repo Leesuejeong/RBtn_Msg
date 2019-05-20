@@ -11,19 +11,36 @@ namespace RBtn_Msg
 {
     public partial class Form1 : Form
     {
+        private MessageBoxButtons mbb;
+        private MessageBoxIcon mbi;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void RbInformation_CheckedChanged(object sender, EventArgs e)
+        private void BtnShow_Click(object sender, EventArgs e)
         {
+            if (this.rbOk.Checked)
+            {
+                this.mbb = MessageBoxButtons.OK;
+            } else if (this.rbOkCancel.Checked)
+            {
+                this.mbb = MessageBoxButtons.OKCancel;
+            }else if (this.rbYesNo.Checked)
+            {
+                this.mbb = MessageBoxButtons.YesNo;
+            }else if (this.rbError.Checked)
+            {
+                
+            }else if (this.rbInformation.Checked)
+            {
+                
+            }else if (this.rbQuestion.Checked)
+            {
 
-        }
-
-        private void RbError_CheckedChanged(object sender, EventArgs e)
-        {
-
+            }
+            MessageBox.Show("메시지 박스를 확인하세요", "알림", mbb, mbi);
         }
     }
 }
