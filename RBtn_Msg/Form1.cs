@@ -30,17 +30,19 @@ namespace RBtn_Msg
             }else if (this.rbYesNo.Checked)
             {
                 this.mbb = MessageBoxButtons.YesNo;
-            }else if (this.rbError.Checked)
+            }
+            if (this.rbError.Checked)
             {
-                
+                this.mbi = MessageBoxIcon.Error;
             }else if (this.rbInformation.Checked)
             {
-                
+                this.mbi = MessageBoxIcon.Information;
             }else if (this.rbQuestion.Checked)
             {
-
+                this.mbi = MessageBoxIcon.Question;
             }
             MessageBox.Show("메시지 박스를 확인하세요", "알림", mbb, mbi);
         }
+
     }
 }

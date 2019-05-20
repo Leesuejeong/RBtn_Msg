@@ -119,7 +119,6 @@
             this.rbInformation.TabStop = true;
             this.rbInformation.Text = "Information";
             this.rbInformation.UseVisualStyleBackColor = true;
-            
             // 
             // rbError
             // 
@@ -131,7 +130,6 @@
             this.rbError.TabStop = true;
             this.rbError.Text = "Error";
             this.rbError.UseVisualStyleBackColor = true;
-            
             // 
             // btnShow
             // 
